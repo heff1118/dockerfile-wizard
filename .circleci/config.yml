@@ -54,7 +54,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/electron-java
+      - image: $DOCKER_USERNAME/electron-java:
         environment:
           <<: *image_config
 

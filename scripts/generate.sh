@@ -131,4 +131,9 @@ RUN apt-get -y install libgconf-2-4 \
   && rm -rf chromedriver_linux64.zip \
   && mv chromedriver /usr/local/bin/chromedriver \
   && chmod +x /usr/local/bin/chromedriver"
+
+echo "Installing wine
+    RUN dpkg --add-architecture i386
+    RUN apt-get update
+    RUN apt-get install --no-install-recommends --assume-yes wine"
 fi
